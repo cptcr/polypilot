@@ -1,50 +1,92 @@
-# React + TypeScript + Vite
+# SG Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web application for an Injection Molding related platform, featuring material and machine databases, and various calculators.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **Materials Database**: Comprehensive list of injection molding materials with their properties.
+-   **Machines Database**: Detailed specifications of various injection molding machines.
+-   **Calculators**: A suite of tools for common injection molding calculations (e.g., clamping force, cooling time, cycle time).
+-   **Process Sheet**: A page designed for process setup (to be further developed).
+-   **Internationalization**: Support for multiple languages using `react-i18next`.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   React
+-   Vite
+-   TypeScript
+-   Tailwind CSS
+-   `react-router-dom` for routing
+-   `lucide-react` for icons
+-   `i18next` and `react-i18next` for internationalization
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+-   npm (Node Package Manager) or Yarn
+
+### Steps
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/sg-website.git
+    cd sg-website
+    ```
+    (Note: Replace `https://github.com/your-username/sg-website.git` with the actual repository URL if available, or instruct the user to unpack the project if it's a local archive.)
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+### Development Server
+
+To run the project in development mode:
+
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+This will start the Vite development server, usually accessible at `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Build for Production
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+To build the project for production:
+
+```bash
+npm run build
 ```
+
+This command will compile the project into the `dist` directory.
+
+### Preview Production Build
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## License
+
+Distributed under the GNU General Public License v3.0. See `LICENSE` for more information.
+
+## Contact
+
+Your Name - [your_email@example.com](mailto:your_email@example.com)
+Project Link: [https://github.com/your-username/sg-website](https://github.com/your-username/sg-website)
